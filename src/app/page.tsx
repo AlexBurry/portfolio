@@ -10,6 +10,7 @@ import {
 import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import ContactMeForm from "./_components/contact-me-form";
 
 export default function Home() {
   const iconHeight = 100;
@@ -127,7 +128,7 @@ export default function Home() {
                   </p>
                   <div>
                     <Link
-                      href="https://github.com/AlexBurry/PredictingFootballMatches"
+                      href="https://github.com/AlexBurry/MyForum"
                       className="underline underline-offset-2 hover:underline-offset-4"
                     >
                       Source code on Github
@@ -144,18 +145,8 @@ export default function Home() {
             </Card>
           </div>
 
-          {/* Contact */}
-          {/* <div className="flex justify-center">
-            <Card className="w-[460px] ">
-              <CardHeader>
-                <CardTitle>Contact Me</CardTitle>
-                <CardDescription>
-                  Like what you see? Get in touch!
-                </CardDescription>
-              </CardHeader>
-              <Separator />
-            </Card>
-          </div> */}
+          {/* Contact me */}
+          <ContactMeForm />
         </div>
       </main>
       {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
